@@ -18,7 +18,7 @@ import { uglify }   from 'rollup-plugin-uglify';
 // =============================================================================
 // Copyright
 const currentYear = (new Date()).getFullYear();
-const releaseYear = 2017;
+const releaseYear = 2019;
 
 // Output
 const entryFile  = path.resolve(__dirname, 'src', 'index.js');
@@ -37,6 +37,7 @@ const bannerData = [
 const pluginSettings = {
     eslint: {
         exclude       : ['node_modules/**', './package.json', '**.css'],
+        fix           : true,
         throwOnWarning: false,
         throwOnError  : true
     },
@@ -92,7 +93,7 @@ const config = {
         resolve(),
         commonjs(),
         json(),
-        // eslint(pluginSettings.eslint),
+        eslint(pluginSettings.eslint),
         babel(pluginSettings.babel)
     ],
     watch: {
