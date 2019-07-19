@@ -1,19 +1,15 @@
-.SideBarCollapse-ChildrenHidden {
-    display: none;
-}
-
 .SideBarCollapse-ItemClosed {
     background-image: var(--sidebar-nav-pagelink-background-image);
-    background-position: 3px;
+    background-position: var(--sidebar-nav-pagelink-background-position);
     background-repeat: var(--sidebar-nav-pagelink-background-repeat);
     background-size: var(--sidebar-nav-pagelink-background-size);
-    padding: 0px 0px 0px 20px;
+    padding: var(--sidebar-nav-pagelink-padding, var(--sidebar-nav-link-padding));
 }
 
 .SideBarCollapse-ItemOpened {
     background-image: var(--sidebar-nav-pagelink-background-image--active, var(--sidebar-nav-pagelink-background-image--loaded, var(--sidebar-nav-pagelink-background-image)));
-    background-position: 3px;
+    background-position: var(--sidebar-nav-pagelink-background-position);
     background-repeat: var(--sidebar-nav-pagelink-background-repeat);
     background-size: var(--sidebar-nav-pagelink-background-size);
-    padding: 0px 0px 0px 20px;
+    padding: var(--sidebar-nav-pagelink-padding, var(--sidebar-nav-link-padding));
 }
