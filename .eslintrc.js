@@ -30,7 +30,7 @@ module.exports = {
         "no-return-assign"           : ["error"],
         "no-template-curly-in-string": ["error"],
         "no-unneeded-ternary"        : ["error"],
-        "no-unused-vars"             : ["error", { "args": "none" }],
+        "no-unused-vars"             : ["warn", { "args": "none" }],
         "no-useless-computed-key"    : ["error"],
         "no-useless-return"          : ["error"],
         "no-var"                     : ["error"],
