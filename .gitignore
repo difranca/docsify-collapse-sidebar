@@ -1,6 +1,5 @@
-# Others
+# Distribution
 dist
-*.lock
 
 # Logs
 logs
