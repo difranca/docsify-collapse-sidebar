@@ -4,6 +4,7 @@
     background-repeat: var(--sidebar-nav-pagelink-background-repeat);
     background-size: var(--sidebar-nav-pagelink-background-size);
     padding: var(--sidebar-nav-pagelink-padding, var(--sidebar-nav-link-padding));
+    margin: inherit;
 }
 
 .SideBarCollapse-ItemOpened {
